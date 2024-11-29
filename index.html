@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Link Css file--->
+    <link rel="stylesheet" href="style.css" />
+    <!---Link font awesome icon CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Income & Expence's Tracker</title>
+  </head>
+  <body>
+    <section class="tracker_container">
+      <div class="heading"><h1>Income & Expences Tracker</h1></div>
+
+      <!-- Transaction Added Container -->
+
+      <div class="income-expences_contanier">
+        <form class="income income_form">
+          <h3>Income</h3>
+          <input type="date" id="income_date" />
+          <input type="number" class="amount_input" id="income_amount" />
+          <select class="select" id="income_selecter">
+            <option>Salary</option>
+            <option>Bonus</option>
+            <option>Others</option>
+          </select>
+          <input
+            type="text"
+            placeholder="description for others"
+            class="decription"
+            id="income_disc"
+          />
+          <button class="add_btn" type="submit">Add</button>
+        </form>
+
+        <form class="expences income expences_form">
+          <h3>Expences</h3>
+          <input type="date" id="expences_date" />
+          <input type="number" class="amount_input" id="expences_amount" />
+          <select class="select" id="expences_selector">
+            <option>Rent</option>
+            <option>Food</option>
+            <option>Others</option>
+          </select>
+          <input
+            type="text"
+            placeholder="description for others"
+            class="decription"
+            id="expences_disc"
+          />
+          <button class="delete_btn" type="submit">Add</button>
+        </form>
+      </div>
+
+      <!-- Transaction Summary Container -->
+
+      <div class="transation-summary_container">
+        <div class="transaction">
+          <h3>Transaction History :</h3>
+          <ul class="transaction_history"></ul>
+        </div>
+        <div class="summary">
+          <p class="summary_income" id="income">
+            Income : <span class="sum_span span_income">₹0</span>
+          </p>
+          <p class="summary_expences">
+            Expences : <span class="sum_span span_expences">₹0</span>
+          </p>
+          <p class="sum">
+            Total Remaining : <span class="sum_span span_total">₹0</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
