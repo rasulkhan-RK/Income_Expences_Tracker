@@ -47,13 +47,13 @@ function updateTransaction() {
     let listItem = document.createElement("li");
     listItem.classList.add(transaction.type);
     listItem.innerHTML = `• 
-      ${transaction.date} - ${transaction.description}
-      - ${transaction.select} - ₹${transaction.amount}
+      ${transaction.date} , ${transaction.description}
+       ${transaction.select} , ₹${transaction.amount}
       <div class="transaction_btn">
       <button class="delete_transaction" onclick="deleteTransaction(${index})">&times;</button>
       </div>
-
     `;
+
     transactionHistory.appendChild(listItem);
 
     if (transaction.type === "income") {

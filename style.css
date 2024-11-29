@@ -127,13 +127,22 @@
 .transaction_history {
   width: 100%;
 }
+
+.transaction_history .income {
+  background-color: lightgreen;
+}
+.transaction_history .expences {
+  background-color: rgba(238, 119, 119, 0.929);
+}
 .transaction_history li {
   font-size: 17px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 5px 15px;
-  border-bottom: 1px solid;
+  font-weight: 500;
+  border-radius: 5px;
+  list-style-type: none;
 }
 
 .transaction_history .transaction_btn {
