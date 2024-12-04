@@ -13,4 +13,5 @@ Skills:
 • Data manipulation with JavaScript  
 • Responsive design for all devices  
 
-![{2CC60595-EB11-44FC-98E7-A9E24D9CE746}](https://github.com/user-attachments/assets/d6e172aa-ae4b-40d7-80a6-d8ef615cc425)
+![{CE67227A-AEAD-48E2-B779-08D103F97701}](https://github.com/user-attachments/assets/45a88529-2430-45c7-a448-30a11adc4212)
+
